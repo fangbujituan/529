@@ -1,0 +1,46 @@
+        使用Git进行版本控制
+D.1 安装 Git
+    请访问http://msysgit.github.io/，并单击Download。
+
+D.1.4 配置 Git
+    git config --global user.name "username"
+    git config --global user.email "username@example.com"
+
+D.2 创建项目
+    hello_world.py
+D.3 忽略文件
+    .gitignore文件
+    内容：__pycache__/
+D.4 初始化仓库
+    打开一个终端窗口，切换到文件夹git_practice，并执行如下命令：
+    git init
+D.5 检查状态
+     git status
+D.6 将文件加入到仓库中
+    git add .
+    git status
+D.7 执行提交
+    下面来执行第一次提交：
+    git commit -m "Started project."    # 以拍摄项目的快照
+    git status
+D.8 查看提交历史
+    git log
+    git log --pretty=oneline
+
+D.9 第二次提交
+    在hello_world.py中再添加一行代码：print("Hello everyone.")
+    git status
+    git commit -am "Extended greeting."
+    git status
+    git log --pretty=oneline
+D.10 撤销修改
+    首先在hello_world.py中再添加一行代码：
+    print("Oh no, I broke the project!")
+    git status
+    git checkout .
+    git status
+D.11 检出以前的提交
+    git log --pretty=oneline
+    git checkout be017b
+
+D.12 删除仓库
