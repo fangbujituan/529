@@ -7,7 +7,7 @@ print(driver.title)
 time.sleep(2)
 # 刷新页面
 # driver.refresh()
-driver.find_element_by_id("kw").send_keys("闫得超")
+driver.find_element_by_id("kw").send_keys("天霸")
 driver.find_element_by_id("su").click()
 time.sleep(5)
 driver.quit()
